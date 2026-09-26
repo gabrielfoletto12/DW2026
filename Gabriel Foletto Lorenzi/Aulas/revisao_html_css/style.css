@@ -6,9 +6,7 @@ body {
     background-color: azure;
     margin: 0;
     font-family: 'Gill Sans';
-    color: darkslategray;
-
-
+    color: darkslategrey;
 }
 
 header {
@@ -19,25 +17,26 @@ header {
 }
 
 nav a {
-    display: flex;
     color: rgb(42, 101, 103);
     margin-right: 16px;
     text-decoration: none;
 }
 
+
+
 main {
     max-width: 900px;
     margin: 32px;
-    padding:  0 24px;
+    padding: 0 24px;
 }
 
 section {
     margin-bottom: 32px;
-
 }
 
 article {
     padding: 20px;
+    border-radius: 8px;
     background-color: lightcoral;
     color: darkolivegreen;
 }
@@ -49,19 +48,24 @@ article {
 
 .lista-cursos {
     display: flex;
-    gap: 16px;
+    gap: 4px;
     justify-content: center;
 }
 
 .curso {
+    flex: 1;
     border-radius: 100px;
     padding: 24px;
     text-align: center;
 }
 
-@media (max-width: 600px){
-.lista-cursos {
-   flex-direction: column;
+@media (max-width: 400px) {
+    .lista-cursos {
+       flex-direction: column;
+    }
+
+    .curso {
+        padding: 10px;
+    }
 }
 
-}
